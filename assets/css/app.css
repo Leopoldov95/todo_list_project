@@ -1,0 +1,180 @@
+:root {
+  --primary-color: #6825f7;
+  --secondary-color: tomato;
+  --main-grey: rgb(150, 150, 150);
+  --secondary-grey: rgb(226, 226, 226);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  color: var(--main-grey);
+}
+
+p {
+  color: var(--main-grey);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utilities */
+.btn {
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px;
+  color: white;
+  border-radius: 3px;
+  background-color: var(--secondary-color);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(224, 73, 46);
+}
+
+.btn_sec {
+  border: none;
+  color: var(--main-grey);
+  background-color: white;
+}
+
+.btn_sec:hover {
+  cursor: pointer;
+}
+
+.py-1 {
+  padding: 1rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+/* Content */
+
+.container {
+  margin: auto;
+  margin-top: 150px;
+  text-align: auto;
+  width: 350px;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.container .main_display {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--secondary-grey);
+  background-color: #eae9ff;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.container .main_display .date_display h1 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.container .main_display .date_display h1 span {
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.container .main_display .date_display h3 {
+  color: var(--main-grey);
+  font-weight: lighter;
+}
+
+.container .main_display .func_display {
+  text-align: end;
+}
+
+.container .main_display .func_display p {
+  font-size: 14px;
+  color: var(--main-grey);
+  padding-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+.container .user_input {
+  border-bottom: 1px solid var(--secondary-grey);
+}
+
+.container .user_input #user_input {
+  height: 100%;
+  border: none;
+  /*  height: 1rem; */
+  font-size: 16px;
+  color: var(--main-grey);
+}
+
+.container .user_input #user_input:focus {
+  caret-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.container .user_input #user_input:hover::placeholder {
+  color: var(--primary-color);
+}
+
+.container .user_items {
+  max-height: 364px;
+  min-height: 160px;
+  overflow-y: auto;
+}
+
+.container .user_items ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+footer {
+  bottom: 10px;
+}
+
+footer > div {
+  font-size: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--secondary-color);
+}
+
+/* make trash icon dissapear by default */
+.fa-trash {
+  display: none;
+  color: var(--secondary-color);
+}
+
+/* making a trash icon appear when hovering over a list */
+.list-info:hover * {
+  display: inline;
+}
+
+.list_item:checked + span {
+  text-decoration: line-through;
+  color: #333;
+}

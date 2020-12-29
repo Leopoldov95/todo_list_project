@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo List</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="main_display py-1">
+        <div class="date_display">
+            <h1 class="date">Tuesday, <span>25th<span></h1>
+            <h3>October</h3>
+        </div>
+        <div class="func_display">
+            <p class="tasks">0 Tasks</p>
+            <input type="button" class="clear btn" value="CLEAR LIST">
+        </div>
+      </header>
+      <div class="user_input py-1">
+      <span><i class="fas fa-plus btn_sec" id="add_item"></i></span>
+       <input type="text" id="user_input" class='ml-1' placeholder="Type New Task">
+      </div>
+      <div class="user_items py-1">
+        <ul class="list_body">
+        </ul>
+      </div>
+      <footer>
+        <div>
+          <p class="py-1">Created by <a href="https://github.com/LeopoldoV95" target="_blank">Leopoldo Ortega<a></p>
+        </div>
+        
+      </footer>
+    </div>
+    <script src="assets/js/time.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+  </body>
+</html>
