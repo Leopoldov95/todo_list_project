@@ -129,13 +129,12 @@ a {
 }
 
 .container .user_input #user_input:focus {
-  caret-color: transparent;
   outline: none;
   border: none;
 }
 
-.container .user_input #user_input:hover::placeholder {
-  color: var(--primary-color);
+.container .user_input #user_input:focus::placeholder {
+  color: transparent;
 }
 
 .container .user_items {
