@@ -8,6 +8,9 @@
 ## General Info
 This project was my first ever project I did on my own using html, css, and javaScript. This project was a great learning experience for me as I learned more about how to use DOM as well as how to handle events. I also had fun learning about the date and time methods in javaScript.
 
+## Screenshot
+![screenshot](/todo_screenshot.png)
+
 ## Technologies
 This project is created with:
 * HTML
